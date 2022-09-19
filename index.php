@@ -54,8 +54,12 @@ echo "</pre>";
           <td><?php echo $row['id'] ?></td>
           <td><?php echo $row['title'] ?></td>
             <?php 
-                    echo "<td><a class='btn btn-danger' href='./delete.php?id=".$row['id']."'>Delete</a></td>"
+                    echo "<td><a class='btn btn-danger' href='./delete.php?id=".$row['id']."'>Delete</a>
+                    <a class='btn btn-danger' href='./update.php?id=".$row['id']."'>Update</a>
+                    
+                    </td>"
                   ?>
+
         </tr>
       <?php
 
@@ -66,3 +70,4 @@ echo "</pre>";
   </table>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body></html>
+<!-- <a href="update.php?updateid='.$id'" class="btn btn-danger"> Update </a> -->
