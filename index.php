@@ -55,10 +55,10 @@ echo "</pre>";
           <td><?php echo $row['title'] ?></td>
             <?php 
                     echo "<td><a class='btn btn-danger' href='./delete.php?id=".$row['id']."'>Delete</a>
-                    <a class='btn btn-danger' href='./update.php?id=".$row['id']."'>Update</a>
                     
                     </td>"
                   ?>
+           <td scope="col"><a href="update.php?id=<?php echo $row['id']; ?> &title=<?php echo $row['title'];?>" class="btn btn-success">Update</a></td>        
 
         </tr>
       <?php
